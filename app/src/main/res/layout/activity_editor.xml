@@ -1,48 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".activity.editor.EditorActivity">
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context="com.haerul.crudretrofitpost.com.haerul.mynoteapp.EditorActivity">
 
-    <RelativeLayout
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="20dp">
-
+        android:layout_height="wrap_content">
         <EditText
-            android:id="@+id/title"
-            android:hint="@string/to_do"
-            android:textSize="25sp"
-            android:inputType="textCapSentences"
+            android:id="@+id/input_name"
+            android:hint="Name"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:ignore="Autofill" />
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
 
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
         <EditText
-            android:id="@+id/note"
-            android:layout_below="@id/title"
-            android:hint="@string/enter_note"
-            android:inputType="textMultiLine"
-            android:minLines="6"
-            android:gravity="top|start"
-            android:layout_marginTop="20dp"
+            android:id="@+id/input_email"
+            android:hint="Email"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:ignore="Autofill" />
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
 
-        <com.thebluealliance.spectrum.SpectrumPalette
-            android:id="@+id/palette"
-            android:layout_below="@id/note"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:spectrum_colors="@array/demo_colors"/>
+    <Button
+        android:id="@+id/bSimpan"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Simpan"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-    </RelativeLayout>
-
-</android.support.v4.widget.NestedScrollView>
+</LinearLayout>
