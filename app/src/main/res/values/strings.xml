@@ -3,4 +3,7 @@
     <string name="enter_note">Enter a note...</string>
     <string name="to_do">To do</string>
     <string name="save">Save</string>
+    <string name="edit" />
+    <string name="delete" />
+    <string name="update" />
 </resources>
