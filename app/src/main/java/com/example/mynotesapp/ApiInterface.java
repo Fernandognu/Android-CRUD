@@ -10,9 +10,8 @@ public interface ApiInterface {
     @FormUrlEncoded
     @POST("save.php")
     Call<Note> saveNote(
-        @Field("title") String title,
-        @Field("note") String note,
-        @Field("color") int color
+            @Field("title") String title,
+            @Field("note") String note,
+            @Field("color") int color
     );
-
 }
