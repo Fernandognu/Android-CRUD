@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         fab = findViewById(R.id.add);
         fab.setOnClickListener(view ->
-            startActivities(new Intent(this, EditorActivity.class))
+            startActivity(new Intent(this, EditorActivity.class))
         );
     }
 }
