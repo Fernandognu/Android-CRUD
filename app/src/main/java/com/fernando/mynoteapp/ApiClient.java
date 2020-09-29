@@ -5,8 +5,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
 
-    public static final String BASE_URL = "my-notes-ap.000webhostapp.com";
-    public static Retrofit retrofit = null;
+    private static final String BASE_URL = "https://my-notes-ap.000webhostapp.com/";
+    private static Retrofit retrofit;
 
     public static Retrofit getApiClient() {
 
@@ -16,8 +16,8 @@ public class ApiClient {
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
-        return retrofit;
 
+        return retrofit;
     }
 
 }
