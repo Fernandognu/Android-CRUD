@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
 
-    private static final String BASE_URL = "http://your-domain-name.000webhostapp.com/";
+    private static final String BASE_URL = "http://my-notes-ap.000webhostapp.com/";
     private static Retrofit retrofit;
 
     public static Retrofit getApiClient() {
