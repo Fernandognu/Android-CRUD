@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:padding="20dp"
     android:orientation="vertical"
-    tools:context="com.fernando.mynoteapp.EditorActivity">
+    tools:context="com.haerul.crudretrofitpost.EditorActivity">
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
